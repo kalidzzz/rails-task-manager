@@ -1,0 +1,12 @@
+<div class="cont">
+  <div class="header">
+    <h1> Add tasks </h1>
+  </div>
+    <div class="check">
+      <%= simple_form_for(@task) do |f| %>
+        <%= f.input :details %>
+        <%= f.input :title %>
+        <%= f.submit class: "btn-create" %>
+      <% end %>
+    </div>
+  </div>

@@ -1,0 +1,9 @@
+<h1> Edit </h1>
+  <div class="check">
+   <%= simple_form_for(@task) do |f| %>
+        <%= f.input :details %>
+        <%= f.input :title %>
+        <%= f.input :completed, as: :boolean, class: "completed"%>
+        <%= f.submit class: "btn-create" %>
+      <% end %>
+  </div>

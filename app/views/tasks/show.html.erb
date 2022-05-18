@@ -1,0 +1,8 @@
+<h1> Details </h1>
+<div class="text-center">
+  <h2><%= @task.title %></h2>
+  <p><%= @task.details %></p>
+</div>
+
+<%= link_to "delete", task_path(@task), method: :delete, class: "btn-create"%>
+<%= link_to "edit", task_edit_path(@task), class: "btn-create"%>
